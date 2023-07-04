@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&amp;family=Spectral:ital,wght@0,400;1,300;1,400;1,800&amp;display=swap');
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -18,22 +20,22 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+h1 {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -79,20 +81,25 @@ body {
 	margin-bottom: 60px;
 	font-size: 30px;
 }
-.about-me__introduction {
+#about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+	line-height: 1.2;
+	margin-block-start: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+	display: block;
 }
 #about-me p {
 	width: 80%;
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -101,12 +108,14 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
+	color: #000;
 }
+
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -144,15 +153,24 @@ body {
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral';
 	font-style: italic;
 	font-weight: 300;
+	margin-top: 0;
+    margin-bottom: 0.5rem;
+	line-height: 1.2;
+	font-size: 2.5rem;
+	
 
 }
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+}
+
+.meta-description {
+	margin-left: 5px;
 }
 
 #services {
@@ -243,8 +261,13 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
+.description {
+display: flex;
+}
 
-@media all and (max-width: 1180px) {
+
+
+@media screen and (max-width: 1180px) {
 	.picture {
 		flex : 2;
 	}
@@ -255,12 +278,12 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me__introduction, #about-me p {
 		width: 100%;
 	}
 }
 
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
 
@@ -319,7 +342,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
